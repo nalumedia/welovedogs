@@ -66,12 +66,13 @@ function DogApp() {
         <img src={dogData.url} width="300" alt="Dog" />
       </div>
       <div className="col">
-        <h3>😍 Hooray! Let's read about an: {dogData.breeds[0].name}</h3>
-        <p>💕 An <b>{dogData.breeds[0].name} </b>is {dogData.breeds[0].temperament}</p>
+        <h3>😍 Hooray! Let's read about an: {dogData?.breeds[0]?.name}</h3>
+        <p>💕 An <b>{dogData?.breeds[0]?.name} </b>is {dogData?.breeds[0]?.temperament}</p>
         <pre style={{whiteSpace: "pre-wrap"}}>
           {gpt3Text}
         </pre>
       </div>
+
     </div>
   )}
 </div>
